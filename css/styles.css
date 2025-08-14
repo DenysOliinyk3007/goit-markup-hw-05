@@ -800,7 +800,7 @@ img {
 
 }
 
-.visually-hidden:checked ~.checkmark{
+.visually-hidden:checked ~ .checkmark{
     background-color:#404bbf;
     border: none;
     fill:#F4F4FD;
@@ -820,7 +820,7 @@ img {
 }
 
 .terms-link{
-    color: rgba(64, 75, 191, 1);
+    color: #4d5ae5;
 }
 .terms-link:hover, .terms-link:focus {
     text-decoration: underline;
