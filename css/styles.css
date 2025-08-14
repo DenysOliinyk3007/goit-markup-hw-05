@@ -800,7 +800,7 @@ img {
 
 }
 
-.visually-hidden input[type="checkbox"]:checked + .checkmark{
+input[type="checkbox"]:checked + .checkmark{
     background-color:#404bbf;
     border: none;
     fill:#F4F4FD;
