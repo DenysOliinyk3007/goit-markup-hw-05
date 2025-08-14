@@ -383,85 +383,78 @@
         </section>
     </main>
 
-
-    
-
-
-
-
-    <footer class="page-footer">
-        <div class="modal-overlay">
-            <div class="feedback_form">
-                <button class = "exit-button" type = "submit">
-                    <svg class = "close-menu-icon" width = "8" height = "8">
-                        <use href = "./images/icons.svg#icon-close-black-18dp-2-1"></use>
+    <div class="modal-overlay">
+        <div class="feedback_form">
+            <button class = "exit-button" type = "submit">
+                <svg class = "close-menu-icon" width = "8" height = "8">
+                    <use href = "./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+            <h2 class = "form-header">Leave your contacts and we will call you back</h2>
+            <label class = "form-label">
+                Name
+                <div class="input-container">
+                    <input type = "text" name = "username" />
+                    <svg class = "input-icon" width = "18" height = "24">
+                        <use href = "./images/icons.svg#icon-person-black-18dp-1-2"></use>
                     </svg>
-                </button>
-                <h2 class = "form-header">Leave your contacts and we will call you back</h2>
-                <label class = "form-label">
-                    Name
-                    <div class="input-container">
-                        <input type = "text" name = "username" />
-                        <svg class = "input-icon" width = "18" height = "24">
-                            <use href = "./images/icons.svg#icon-person-black-18dp-1-2"></use>
-                        </svg>
-                    </div>
-                    
-                </label>
-    
-                <label class = "form-label">
-                    Phone
-                    <div class="input-container">
-                        <input type = "tel" name = "user-phone-number" />
-                        <svg class = "input-icon" width = "18" height = "24">
-                            <use href = "./images/icons.svg#icon-phone-black-18dp-1"></use>
-                        </svg>
-                    </div>
-                    
-                </label>
-    
-                <label class = "form-label">
-                    Email
-                    <div class="input-container">
-                        <input type = "email" name = "user-email" />
-                        <svg class = "input-icon" width = "18" height = "24">
-                            <use href = "./images/icons.svg#icon-email-black-18dp-1"></use>
-                        </svg>
-                    </div>
-                    
-                </label>
-                <label class = "form-label">
-                    Comment
-                    <textarea class = "text-area" name = "comment" rows = "10" placeholder="Text input">
-                    
-                    </textarea>
+                </div>
+                
+            </label>
+
+            <label class = "form-label">
+                Phone
+                <div class="input-container">
+                    <input type = "tel" name = "user-phone-number" />
+                    <svg class = "input-icon" width = "18" height = "24">
+                        <use href = "./images/icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                </div>
+                
+            </label>
+
+            <label class = "form-label">
+                Email
+                <div class="input-container">
+                    <input type = "email" name = "user-email" />
+                    <svg class = "input-icon" width = "18" height = "24">
+                        <use href = "./images/icons.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                </div>
+                
+            </label>
+            <label class = "form-label">
+                Comment
+                <textarea class = "text-area" name = "comment" rows = "10" placeholder="Text input">
+                
+                </textarea>
+            </label>
+            
+
+            <div class="checkbox-class">
+                <label class = "checkbox-container">
+                    <input class = "custom-checkbox" type = "checkbox" name = "terms-and-conditions">
+                    <span class = "checkmark"></span>
+                    <svg class = "vector-class" width = "16px" height = "16px">
+                        <use href = "images/icons.svg#icon-Vector"></use>
+                    </svg>
                 </label>
                 
-    
-                <div class="checkbox-class">
-                    <label class = "checkbox-container">
-                        <input class = "custom-checkbox" type = "checkbox" name = "terms-and-conditions">
-                        <span class = "checkmark"></span>
-                        <svg class = "vector-class" width = "16px" height = "16px">
-                            <use href = "images/icons.svg#icon-Vector"></use>
-                        </svg>
+                <div class="checkbox-text">
+                    <label for="terms-and-conditions">
+                        I accept the term and conditions of the
                     </label>
-                    
-                    <div class="checkbox-text">
-                        <label for="terms-and-conditions">
-                            I accept the term and conditions of the
-                        </label>
-                        <a class = "terms-link" href = "./index.html">Terms and Conditions</a>
-                    </div>
-                    
+                    <a class = "terms-link" href = "./index.html">Terms and Conditions</a>
                 </div>
-    
-                <button class = "send-button" type = "submit">Send
-                </button>
+                
             </div>
+
+            <button class = "send-button" type = "submit">Send
+            </button>
         </div>
+    </div>
 
-
+    <footer class="page-footer">
         <div class = "container footer-container">
             <div class = "footer-column-one">
                 <a class="footer-logo" href="./index.html" target="_blank">Web
