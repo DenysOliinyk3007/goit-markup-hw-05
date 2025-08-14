@@ -803,13 +803,13 @@ img {
 
 }
 
-.visually-hidden:checked + .checkbox-container > .checkmark{
+.checkbox-input:checked + .checkbox-container > .checkmark{
     background-color:#404bbf;
     border: none;
     fill:#F4F4FD;
 }
 
-.visually-hidden:checked + .checkbox-container .checkmark .vector-class {
+.checkbox-input:checked + .checkbox-container .checkmark .vector-class {
     opacity: 1;
 }
 
