@@ -487,11 +487,27 @@
                     </div>
                 </div>
                     
-                    <label class = "name-label">Comment</label>
-                        <textarea class = "text-area" name = "comment" rows = "10" placeholder="Text input">
-                        
-                        </textarea>
-                
+
+                <div class = "textarea-container">
+                    <label class = "name-label" for = "user-comment">Comment</label>
+                    <textarea class = "text-area" name = "user-comment" id = "user-comment" placeholder="Text input"></textarea>
+                </div>
+                    
+                <div class="checkbox-class">
+                    <label class = "checkbox-container"></label>
+                        <input class = "custom-checkbox" type = "checkbox" name = "terms-and-conditions">
+                        <span class = "checkmark"></span>
+                        <svg class = "vector-class" width = "16px" height = "16px">
+                            <use href = "images/icons.svg#icon-Vector"></use>
+                        </svg>
+                    <div class="checkbox-text">
+                        <label for="terms-and-conditions">
+                            I accept the term and conditions of the
+                        </label>
+                        <a class = "terms-link" href = "./index.html">Terms and Conditions</a>
+                    </div>
+                    
+                </div>
             </form>
             
             
