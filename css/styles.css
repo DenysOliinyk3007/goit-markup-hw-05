@@ -800,7 +800,7 @@ img {
 
 }
 
-input[type="checkbox"]:checked{
+input[type="checkbox"]:checked + .vector-class{
     background-color:#404bbf;
     border: none;
     fill:#F4F4FD;
