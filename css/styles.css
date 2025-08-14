@@ -757,9 +757,12 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.name-text-container:focus-within, .name-text-container:focus-within .input-icon{
-    fill: #4D5AE5;
+.name-text-container:focus-within{
     border-color: #4D5AE5;
+} 
+
+.name-text-container:focus-within ~.input-icon{
+    fill: #4D5AE5;
 }
 
 .textarea-container{
@@ -789,76 +792,33 @@ img {
     margin-bottom: 24px;
 }
 
+.checkbox-container{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color:#8e8f99; 
 
-
-
-
-
-.checkbox-class{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 8px;
 }
 
-.custom-checkbox{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-.checkbox-container{s
-    display: block;
-    position: relative;
-    cursor: pointer;
-    user-select: none;
-    width: 20px;
-    height: 20px;
+.visually-hidden:checked ~.checkmark{
+    background-color:#404bbf;
+    border: none;
+    fill:#F4F4FD;
 }
 
 .checkmark{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    border: 1px solid  rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    z-index: 1;
+    width: 16px;
+    height: 16px; 
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+
 }
 
-.vector-class {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    z-index: 2;
-    opacity: 0;
-}
-
-.custom-checkbox:checked ~ .vector-class {
-        opacity: 1;
-}
-
-.custom-checkbox:checked ~.checkmark::after{
-    content: "";
-    position: absolute;
-    display: block;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background-color: rgba(64, 75, 191, 1);
-    overflow: hidden;
-    border-radius: 4px;
-}
-
-
-.checkbox-text{
-    display:flex;
-    gap: 3px;
-}
 .terms-link{
     color: rgba(64, 75, 191, 1);
 }
@@ -868,7 +828,16 @@ img {
 
 
 .send-button{
-    align-self: center;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
     padding: 16px 32px 16px 32px;
     width: 169px;
     height: 56px;
@@ -877,5 +846,4 @@ img {
     background-color: #4D5AE5;
     color: #ffffff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
